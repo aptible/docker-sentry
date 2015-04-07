@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Create the initial schema if needed
+sentry upgrade
+
+# Run bootstrap script to add our default team, projects and superusers
+# see http://sentry.readthedocs.org/en/latest/faq/index.html#how-do-i
+python bootstrap.py
+
+# As the default superuser was not created on the first `upgrade` run,
+# Sentry requires us to repair the installation
+sentry repair --owner=${ADMIN_USERNAME:-aptible}
