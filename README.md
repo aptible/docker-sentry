@@ -37,6 +37,10 @@ To run as an app on Aptible:
 You should be up and running now. If you're new to Sentry, try checking out the
 [official documentation](http://sentry.readthedocs.org/en/latest/).
 
+## Contributors
+
+Very special thanks to Ozan Onay ([@ozan](https://github.com/ozan)) for implementing the Dockerized distribution of Sentry which we've released with minor modifications in this repo.
+
 ## Copyright and License
 
 MIT License, see [LICENSE](LICENSE.md) for details.
