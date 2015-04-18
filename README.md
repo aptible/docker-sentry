@@ -15,18 +15,15 @@ To run as an app on Aptible:
     | Variable | Description | Required? | Default Value |
     | -------- | ----------- | --------- | ------------- |
     | `ADMIN_PASSWORD` | Admin password | Yes | - |
-    | `SECRET_KEY` | Secret key for [DSN clients](http://raven.readthedocs.org/en/latest/config/#the-sentry-dsn) sending events | Yes | - |
     | `DATABASE_URL` | PostgreSQL database URL | Yes | - |
     | `SENTRY_URL_PREFIX` | Base URL for server | Yes | - |
     | `ADMIN_USERNAME` | Admin username for Sentry | No | `aptible` |
-    | `ADMIN_EMAIL` | Admin email | No | - |
-    | `SENTRY_KEY` | Sentry key | No | - |
-    | `SENTRY_EMAIL_FROM` | Source address for emails from Sentry | No | `root@localhost` |
-    | `MAILGUN_ACCESS_KEY` | Mailgun access key (for sending email) | No | - |
-    | `MAILGUN_SERVER_NAME` | Mailgun server name | No | - |
+    | `TEAM_NAME` | Team name | No | `Aptible` |
+    | `SECRET_KEY` | Secret key for [DSN clients](http://raven.readthedocs.org/en/latest/config/#the-sentry-dsn) sending events | No | (random) |
+    | `SENTRY_KEY` | Sentry key | No | (random) |
     | `GITHUB_APP_ID` | GitHub OAuth application ID (for GitHub integration) | No | - |
     | `GITHUB_API_SECRET` | GitHub API secret | No | - |
-
+    | `SSLIFY_DISABLE` | Disable forced HTTPS redirection? | No | `False` |
 
 1. Clone this repository and push it to your Aptible app:
 
