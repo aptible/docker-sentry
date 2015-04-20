@@ -11,6 +11,7 @@ RUN locale-gen en_US.UTF-8
 RUN apt-get install -y build-essential python-dev python-pip
 
 # PostgreSQL client libraries
+RUN ln -s -f /bin/true /usr/bin/chfn
 RUN apt-get install -y postgresql postgresql-contrib libpq-dev
 
 # Add the source code
@@ -24,7 +25,8 @@ RUN pip install -r /app/requirements.txt
 ADD . /app
 
 # Move Sentry config to default location
-ADD sentry.conf.py /root/.sentry/sentry.conf.py
+RUN mkdir -p /.sentry/
+ADD sentry.conf.py /.sentry/sentry.conf.py
 
 # Expose configured Sentry port
 EXPOSE 3000
