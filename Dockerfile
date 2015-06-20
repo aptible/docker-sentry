@@ -25,8 +25,8 @@ RUN pip install -r /app/requirements.txt
 ADD . /app
 
 # Move Sentry config to default location
-RUN mkdir -p /.sentry/
-ADD sentry.conf.py /.sentry/sentry.conf.py
+RUN mkdir -p /root/.sentry/
+ADD sentry.conf.py /root/.sentry/sentry.conf.py
 
 # Expose configured Sentry port
 EXPOSE 3000
