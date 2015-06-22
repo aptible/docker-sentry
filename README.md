@@ -24,6 +24,8 @@ To run as an app on Aptible:
     | `GITHUB_APP_ID` | GitHub OAuth application ID (for GitHub integration) | No | - |
     | `GITHUB_API_SECRET` | GitHub API secret | No | - |
     | `SSLIFY_DISABLE` | Disable forced HTTPS redirection? | No | `False` |
+    | `MAILGUN_SERVER_NAME` | Your email domain (eg yourcompany.com) | No | - |
+    | `MAILGUN_ACCESS_KEY` | Mailgun API Key | No | - |
 
 1. Clone this repository and push it to your Aptible app:
 
