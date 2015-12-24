@@ -10,6 +10,8 @@ To run as an app on Aptible:
 
 1. Provision a PostgreSQL database, either from the Aptible Dashboard or the Aptible CLI.
 
+1. Provision an Aptible app, either from the Aptible Dashboard or the Aptible CLI.
+
 1. Configure the following (required and optional) environment variables for your Sentry app:
 
     | Variable | Description | Required? | Default Value |
