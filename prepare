@@ -4,7 +4,7 @@
 sentry upgrade
 
 # Run bootstrap script to add our default team, projects and superusers
-# see http://sentry.readthedocs.org/en/latest/faq/index.html#how-do-i
+# see https://docs.getsentry.com/on-premise/server/faq/
 python bootstrap.py
 
 # As the default superuser was not created on the first `upgrade` run,
