@@ -1,4 +1,4 @@
-Copyright (c) 2013 Aptible, Inc.
+Copyright (c) 2016 Aptible, Inc.
 
 MIT License
 
